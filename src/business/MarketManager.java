@@ -44,14 +44,15 @@ public class MarketManager {
 
         for (Product product : products) {
 
-            if (product.getName().equals(name)) {
+            if (product.hasName(name)) {
                 price = product.getPrice();
             }
         }
 
 
         for (Client client : clients) {
-            if (client.getLogin().equals(login)) {
+
+            if (client.hasLogin(login)) {
                 price = client.calculatePriceDiscount(price);
             }
         }

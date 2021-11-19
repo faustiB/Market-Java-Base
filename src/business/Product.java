@@ -20,4 +20,8 @@ public class Product {
     public double getPrice() {
         return price;
     }
+
+    public boolean hasName(String name) {
+        return this.name.equals(name);
+    }
 }

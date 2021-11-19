@@ -15,4 +15,8 @@ public class Client {
     public double calculatePriceDiscount(double price){
         return price;
     }
+
+    public boolean hasLogin(String login) {
+        return this.login.equals(login);
+    }
 }
