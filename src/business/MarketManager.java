@@ -1,23 +1,19 @@
 package business;
 
-// TODO the business package probably needs more classes
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class MarketManager {
-    // TODO probably add attributes
 
     private ArrayList<Product> products;
     private ArrayList<Client> clients;
 
     public MarketManager() {
-        // TODO probably initialize said attributes
         this.products = new ArrayList<>();
         this.clients = new ArrayList<>();
     }
 
-    // TODO all functionalities
     public void createProduct(String name, double weight, double price) {
         Product p = new Product(name, weight, price);
         products.add(p);
