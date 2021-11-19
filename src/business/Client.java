@@ -7,4 +7,12 @@ public class Client {
     public Client(String login) {
         this.login = login;
     }
+
+    public String getLogin() {
+        return login;
+    }
+
+    public double calculatePriceDiscount(double price){
+        return price;
+    }
 }
