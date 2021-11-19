@@ -10,7 +10,7 @@ public class Professor extends Client {
     }
 
     public double calculatePriceDiscount(double price) {
-        if (experience > 5) {
+        if (experience > 2) {
             return (price * 0.5);
         } else {
             return price;
